@@ -113,6 +113,22 @@ Make meaningful vector representations of each product. This is achieved by usin
            |Training|0.60|0.57|
            |Validation|0.61|0.66|
 
+   - Logistic Regression:
+     a. Architecture: 
+	i. Cluster:
+         - Group-3 GPU- 64GB, 16 Cores, DBR 10.3 ML,Spark 3.21
+         - Since embeddings were computationally expensive to run(~800 features)		
+    	ii.  Algorithms for word Embeddings:
+         - Spark NLP - version: 3.4.2
+         - BERT - Roberta- Multilingual Embeddings  
+         - Cosine Similarity
+	
+     b.	Parameters:
+        i. regParam = 0.01
+        ii. maxIter = 10	
+
+
+
 
 
 
