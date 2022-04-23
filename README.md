@@ -134,7 +134,7 @@ Make meaningful vector representations of each product. This is achieved by usin
            |Training|0.659|
            |Validation|0.657|
 
-   - Experiments and results
+   - Approximate KNN (Locality Sensitive Hashing)
 
      a. Architecture: 
         - Cluster:
