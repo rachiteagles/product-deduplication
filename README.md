@@ -155,8 +155,12 @@ Make meaningful vector representations of each product. This is achieved by usin
            |-------|----|--------|
            |TFIDF with cosine similarity Train|Training|0.52|
            ||Validation|0.44|
-           |-------|----|--------|
-      
+           |BucketRandomProjectionLSH on Resnet18 pertained image embedding|Training|0.38|
+           ||Validation|0.36|
+           |BucketRandomProjectionLSH on Resnet18 pertained image embedding + tfidf features Train|Training|0.83|
+           ||Validation|0.74|
+           |MinHash LSH on product description|Training|0.62|
+           ||Validation|0.56|
 
 
 
