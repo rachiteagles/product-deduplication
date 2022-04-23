@@ -107,10 +107,11 @@ Make meaningful vector representations of each product. This is achieved by usin
          - Weight Decay 0.0001
 
        - Best performance:
-	|Dataset|Loss|Accuracy|
-	|-------|----|--------|
-	|Training|0.60|0.57|
-	|Validation|0.61|0.66|
+
+|Dataset|Loss|Accuracy|
+|-------|----|--------|
+|Training|0.60|0.57|
+|Validation|0.61|0.66|
 
 
 
