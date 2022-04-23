@@ -115,8 +115,8 @@ Make meaningful vector representations of each product. This is achieved by usin
 
    - Logistic Regression:
 
-     a. Architecture: 
-	i. Cluster:
+     a. Architecture:  
+       - Cluster:
          - Group-3 GPU- 64GB, 16 Cores, DBR 10.3 ML,Spark 3.21
          - Since embeddings were computationally expensive to run(~800 features)		
     	ii.  Algorithms for word Embeddings:
@@ -125,8 +125,8 @@ Make meaningful vector representations of each product. This is achieved by usin
          - Cosine Similarity
 	
      b.	Parameters:
-        i. regParam = 0.01
-        ii. maxIter = 10	
+        - regParam = 0.01
+        - maxIter = 10	
 
 
 
