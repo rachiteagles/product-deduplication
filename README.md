@@ -154,8 +154,8 @@ Make meaningful vector representations of each product. This is achieved by usin
         - |Methods|Dataset|Accuracy|
            |-------|----|--------|
            |TFIDF with cosine similarity Train|Training|0.52|
-           |----------------------------------|Validation|0.44|
-           ||-----------|-------|
+           ||Validation|0.44|
+           |-------|----|--------|
       
 
 
