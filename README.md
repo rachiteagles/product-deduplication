@@ -163,7 +163,21 @@ Make meaningful vector representations of each product. This is achieved by usin
            ||Validation|0.56|
 
 
+**Performance Comparisons**
+   - Runtime on GPU-enabled cluster:
+     - Neural Networks
+       - Hyperparameter Tuning: ~ 108000 seconds
+       - Training : ~ 6500 seconds
 
+   - Logistic Regression
+     - Cosine Similarity: ~ 1200 seconds
+     - Fitting Logistic Model: ~ 7200 seconds
+
+   - Approximate KNN
+     - BucketRandomLSH model training: ~80 seconds
+     - BucketRandomLSH approxSimilarity - 600 seconds
+     - TFIDF Cosine Similarity: ~480 seconds
+     - MinHashLSH model training~ 240 seconds
 
 
 
