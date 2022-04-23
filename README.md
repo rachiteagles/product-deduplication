@@ -114,6 +114,7 @@ Make meaningful vector representations of each product. This is achieved by usin
            |Validation|0.61|0.66|
 
    - Logistic Regression:
+
      a. Architecture: 
 	i. Cluster:
          - Group-3 GPU- 64GB, 16 Cores, DBR 10.3 ML,Spark 3.21
