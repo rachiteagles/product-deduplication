@@ -128,6 +128,36 @@ Make meaningful vector representations of each product. This is achieved by usin
         - regParam = 0.01
         - maxIter = 10	
 
+     c. Results:
+        - |Dataset|Accuracy|
+           |-------|--------|
+           |Training|0.659|
+           |Validation|0.657|
+
+   - Experiments and results
+
+     a. Architecture: 
+        - Cluster:
+          - Group-3 GPU- 64GB, 16 Cores, DBR 10.3 ML,Spark 3.21
+
+     b. Algorithms Used:
+        - Resnet18 Embeddings
+        - TFIDF for word features
+        - Cosine Similarity
+        - BucketRandomProjectionLSH
+        - MinHash LSH
+
+     c. Parameters:
+        - K = 5
+
+     d. Results:
+        - |Methods|Dataset|Accuracy|
+           |-------|----|--------|
+           |TFIDF with cosine similarity Train|Training|0.52|
+           |----------------------------------|Validation|0.44|
+           ||-----------|-------|
+      
+
 
 
 
