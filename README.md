@@ -81,36 +81,36 @@ Make meaningful vector representations of each product. This is achieved by usin
 
 **Experiments and results**
 
-     - Neural Networks:
-       - Architecture:
-         - Layers:
-           - Linear
-           - Batch Normalization
+   - Neural Networks:
+     - Architecture:
+       - Layers:
+         - Linear
+         - Batch Normalization
 
-         - Activation Functions:
-           - Sigmoid
-           - Rectified Linear Unit activations (ReLU)
-           - Leaky ReLU
+       - Activation Functions:
+         - Sigmoid
+         - Rectified Linear Unit activations (ReLU)
+         - Leaky ReLU
 
-         - Binary Cross-Entropy loss function (with logits)
+       - Binary Cross-Entropy loss function (with logits)
 
-       - Hyperparameters:
-         - Learning rate: [0.1, 0.001, 0.0001]
-         - Batch Size: [8, 16]
-         - Weight decay: [0, 10-4, 10-2 ]
-         - Early Stopping (limit of 4 non-improvement epochs)
+     - Hyperparameters:
+       - Learning rate: [0.1, 0.001, 0.0001]
+       - Batch Size: [8, 16]
+       - Weight decay: [0, 10-4, 10-2 ]
+       - Early Stopping (limit of 4 non-improvement epochs)
 
-       - Results:
-         - Best Hyperparameters found:
-           - Learning Rate: 10-5
-           - Batch size 16
-           - Weight Decay 0.0001
+     - Results:
+       - Best Hyperparameters found:
+         - Learning Rate: 10-5
+         - Batch size 16
+         - Weight Decay 0.0001
 
-         - Best performance:
-		|Dataset|Loss|Accuracy|
-		|-------|----|--------|
-		|Training|0.60|0.57|
-		|Validation|0.61|0.66|
+       - Best performance:
+	|Dataset|Loss|Accuracy|
+	|-------|----|--------|
+	|Training|0.60|0.57|
+	|Validation|0.61|0.66|
 
 
 
