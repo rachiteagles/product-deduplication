@@ -44,5 +44,75 @@ Make meaningful vector representations of each product. This is achieved by usin
    - Embeddings of image
      - ResNet18
 
-     Joint Embeddings (text + image)
+   - Joint Embeddings (text + image)
+
+<img src="images/flowchart.png" width="50%">
+
+**Supervised Models Approach**
+
+   - Pair Classification:
+     - Make pairs of observations
+       - Arrange some of the pairs to be from matching products (positive pairs)
+       - Remaining pairs from non-matching products (negative pairs)
+       - 1:1 Negative Sample is selected for maintaining class balance.
+
+     - Train a binary classification model to take a pair and predict whether both observations belong to the same unique product or not.
+
+     - Cosine Similarity (used in Logistic) is calculated for all pairs and set as feature for model to find right distance. 
+
+     - The models can be:
+       - Logistic regression
+       - Neural Network
+
+     - For any new observation, compare it with K nearest observations and classify.
+
+**Modelling Approach**
+
+     - Using these representations, we can approach the problem in 2 ways:
+       - Find Nearest Neighbors and choose majority class
+       - Classify pairs of observations into ‘same product’ vs ‘different products’
+
+     - Nearest neighbors approach:
+       - Given an observation, find its (approximate) K nearest-neighbors using Locality Sensitive Hashing techniques:
+         - BucketRandomProjection LSH
+         - MinHash LSH
+
+       - Out of these K neighbors, choose the most frequent product class.
+
+**Experiments and results**
+
+     - Neural Networks:
+       - Architecture:
+         - Layers:
+           - Linear
+           - Batch Normalization
+
+         - Activation Functions:
+           - Sigmoid
+           - Rectified Linear Unit activations (ReLU)
+           - Leaky ReLU
+
+         - Binary Cross-Entropy loss function (with logits)
+
+       - Hyperparameters:
+         - Learning rate: [0.1, 0.001, 0.0001]
+         - Batch Size: [8, 16]
+         - Weight decay: [0, 10-4, 10-2 ]
+         - Early Stopping (limit of 4 non-improvement epochs)
+
+       - Results:
+         - Best Hyperparameters found:
+           - Learning Rate: 10-5
+           - Batch size 16
+           - Weight Decay 0.0001
+
+         - Best performance:
+		|Dataset|Loss|Accuracy|
+		|-------|----|--------|
+		|Training|0.60|0.57|
+		|Validation|0.61|0.66|
+
+
+
+
 
