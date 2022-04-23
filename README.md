@@ -10,20 +10,20 @@ As the dataset has more than ~11k distinct class labels of products,multiclass c
 
 We use a combination of 2 sources to obtain this data:
 
-    *Kaggle Shopee competition data
+    Kaggle Shopee competition data
     - ~ 32500 observations
 
-    *Data scraped from ebay
+    Data scraped from ebay
     - ~ 6000 observations
 
 Each observation has 	
 
-    *Each observation has the following attributes:
-     - Image (1000 x 1000 RGB image)
-     - Product description
-     - Label Group (unique product ID)
-     - Posting ID (unique observation ID)
-     - Image pHash
+    Each observation has the following attributes:
+    - Image (1000 x 1000 RGB image)
+    - Product description
+    - Label Group (unique product ID)
+    - Posting ID (unique observation ID)
+    - Image pHash
 
 **Dataset**
 
@@ -37,12 +37,12 @@ The images and descriptions shown here all belong to the same product
 **Modelling Approach**
 
 Make meaningful vector representations of each product. This is achieved by using
-     *Embeddings of title text
-      -TFIDF
-      -RoBERTa (Multilingual)
+     Embeddings of title text
+     -TFIDF
+     -RoBERTa (Multilingual)
 
-     *Embeddings of image
-      -ResNet18
+     Embeddings of image
+     -ResNet18
 
-     *Joint Embeddings (text + image)
+     Joint Embeddings (text + image)
 
