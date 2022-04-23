@@ -68,16 +68,16 @@ Make meaningful vector representations of each product. This is achieved by usin
 
 **Modelling Approach**
 
-     - Using these representations, we can approach the problem in 2 ways:
-       - Find Nearest Neighbors and choose majority class
-       - Classify pairs of observations into ‘same product’ vs ‘different products’
+   - Using these representations, we can approach the problem in 2 ways:
+     - Find Nearest Neighbors and choose majority class
+     - Classify pairs of observations into ‘same product’ vs ‘different products’
 
-     - Nearest neighbors approach:
-       - Given an observation, find its (approximate) K nearest-neighbors using Locality Sensitive Hashing techniques:
-         - BucketRandomProjection LSH
-         - MinHash LSH
+   - Nearest neighbors approach:
+     - Given an observation, find its (approximate) K nearest-neighbors using Locality Sensitive Hashing techniques:
+       - BucketRandomProjection LSH
+       - MinHash LSH
 
-       - Out of these K neighbors, choose the most frequent product class.
+     - Out of these K neighbors, choose the most frequent product class.
 
 **Experiments and results**
 
