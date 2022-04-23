@@ -38,8 +38,8 @@ The images and descriptions shown here all belong to the same product
 
 Make meaningful vector representations of each product. This is achieved by using
    - Embeddings of title text
-     -TFIDF
-     -RoBERTa (Multilingual)
+     - TFIDF
+     - RoBERTa (Multilingual)
 
      Embeddings of image
      -ResNet18
